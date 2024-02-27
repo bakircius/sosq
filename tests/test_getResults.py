@@ -1,0 +1,1 @@
+getResults("query","key","token")

@@ -1,0 +1,24 @@
+[project]
+name = "sosq"
+version = "1.0.0"
+authors = [
+  { name="bakircius", email="burakbakirci@gmail.com" },
+]
+description = "Building Dataframe from Stack Overflow API with a search query"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+    "pandas",
+    "numpy"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+Homepage = "https://github.com/bakircius/sosq"
+Issues = "https://github.com/bakircius/sosq/issues"
+[tool.pytest.ini_options]
+pythonpath = "src"
