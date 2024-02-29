@@ -18,7 +18,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 [project.urls]
-Homepage = "https://github.com/bakircius/sosq"
+Source = "https://github.com/bakircius/sosq"
 Issues = "https://github.com/bakircius/sosq/issues"
 Repository = "https://github.com/bakircius/sosq.git"
 [tool.pytest.ini_options]
