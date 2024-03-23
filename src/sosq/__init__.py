@@ -30,7 +30,10 @@ def process_response(response: Dict) -> Tuple[pd.DataFrame, bool, bool]:
     return df, has_more, quota_remaining
 
 def append_dataframes(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
-    """Append one DataFrame to another, handling the first iteration case."""
+    """Append one DataFrame to another, handling the first iteration case.
+    append deprecated, concat usesd instead.
+    
+    """
     if df1 is None:
         return df2
     else:
@@ -81,9 +84,3 @@ def get_result(query, key, access_token):
     save_to_csv(df_combined, query + ".csv")
     return df_combined
     print("Query for", query, "successfully saved as csv")
-
-# Uncomment to run the getResults function
-df = get_result('ibm-cloud-api', '03Geb7p3Isfshr2VDAdkrA((', 'WH2dFoAm0Ol4Q61TIi*0Pg))')
-
-
-# results will be in your project folder.

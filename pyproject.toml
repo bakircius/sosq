@@ -1,6 +1,6 @@
 [project]
 name = "sosq"
-version = "1.0.2"
+version = "1.0.3"
 authors = [
   { name="bakircius", email="burakbakirci@gmail.com" },
 ]
@@ -10,12 +10,19 @@ requires-python = ">=3.8"
 dependencies = [
     "requests",
     "pandas",
-    "numpy"
+    "numpy",
+    "typing"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: IDLE",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Information Analysis"
 ]
 [project.urls]
 Source = "https://github.com/bakircius/sosq"
