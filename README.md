@@ -8,7 +8,7 @@ pip install sosq
 
 # for use
 
-1- Get your key and token from stackexchange (https://stackapps.com/users/login?returnurl=/apps/oauth/register)
+1- Get your key and token from stackexchange / follow instructions.
 
 2- sample code below.
 
