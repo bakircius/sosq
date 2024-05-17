@@ -31,7 +31,7 @@ def process_response(response: Dict) -> Tuple[pd.DataFrame, bool, bool]:
 
 def append_dataframes(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
     """Append one DataFrame to another, handling the first iteration case.
-    append deprecated, concat usesd instead.
+    concat deprecated, concat usesd instead.
     
     """
     if df1 is None:
@@ -81,6 +81,9 @@ def get_result(query, key, access_token):
         params = update_params(params, page)
         print("Page", page, "ok")
 
-    save_to_csv(df_combined, query + ".csv")
+    try:
+        save_to_csv(df_combined, query + ".csv")
+        print("Saved")
+    except:
+        print("Not Saved")
     return df_combined
-    print("Query for", query, "successfully saved as csv")

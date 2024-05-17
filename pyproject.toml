@@ -1,10 +1,10 @@
 [project]
 name = "sosq"
-version = "1.0.3"
+version = "1.0.5"
 authors = [
   { name="bakircius", email="burakbakirci@gmail.com" },
 ]
-description = "Building Dataframe from Stack Overflow API with a search query"
+description = "Building Dataframe from Stack Overflow API with a search query and Saving data to csv file"
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
